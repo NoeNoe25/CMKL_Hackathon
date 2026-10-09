@@ -1,3 +1,4 @@
+import os
 # rag_medical_qa_hybrid.py
 
 import pandas as pd
@@ -11,7 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from openai import OpenAI
 
 # 1. Load QA corpus
-with open("/home/linnlinn/Typhoon_OCR/typhoon-ocr/documents/Ai_qa_combine.txt", "r", encoding="utf-8") as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Ai_qa_combine.txt"), "r", encoding="utf-8") as f:
     raw_blocks = f.read().split("\n\n")
 
 # 2. Chunk as QA pairs
@@ -80,7 +81,7 @@ df = pd.read_csv("documents/test.csv")
 
 # 8. Initialize OpenTyphoon
 client = OpenAI(
-    api_key="sk-VevGxEi6QmFBCSsiv1t9PcsbYe0ZEs937qVHtg3aCsORvbrY",
+    api_key=os.environ["TYPHOON_API_KEY"],
     base_url="https://api.opentyphoon.ai/v1"
 )
 

@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify
 from openai import OpenAI
 from flask_cors import CORS
@@ -7,7 +8,7 @@ CORS(app)
 
 # Initialize OpenAI (Typhoon) client
 client = OpenAI(
-    api_key="sk-VevGxEi6QmFBCSsiv1t9PcsbYe0ZEs937qVHtg3aCsORvbrY",  # Replace with your real API key
+    api_key=os.environ["TYPHOON_API_KEY"],
     base_url="https://api.opentyphoon.ai/v1"
 )
 
