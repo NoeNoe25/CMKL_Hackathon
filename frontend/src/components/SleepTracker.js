@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './SleepTracker.css'; // You'll need to create this CSS file
 
 function SleepTracker() {

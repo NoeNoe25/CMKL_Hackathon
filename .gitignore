@@ -1,0 +1,16 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Node
+node_modules/
+frontend/build/
+
+# Generated results
+backend/documents/*_answer*.csv
+backend/documents/test_with_answers.csv
