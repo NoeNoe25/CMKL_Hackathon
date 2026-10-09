@@ -1,3 +1,4 @@
+import os
 # 1. Import necessary libraries
 import pandas as pd
 import re
@@ -10,7 +11,7 @@ df = pd.read_csv("documents/test.csv")
 
 # 3. Initialize the Typhoon client
 client = OpenAI(
-    api_key="sk-VevGxEi6QmFBCSsiv1t9PcsbYe0ZEs937qVHtg3aCsORvbrY",  # Replace with your actual key
+    api_key=os.environ["TYPHOON_API_KEY"],
     base_url="https://api.opentyphoon.ai/v1"
 )
 
