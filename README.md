@@ -144,9 +144,10 @@ No accuracy scores are recorded in this repository. To report results, run both 
 - Persist tracker data (for example `localStorage`)
 - Publish baseline vs. RAG accuracy on a held-out test set
 
-## Author
+## Team
 
-**Hsu Myat Noe** · [GitHub](https://github.com/NoeNoe25) · [LinkedIn](https://www.linkedin.com/in/hsu-myat-noe569aa729a/)
+Built at the CMKL Hackathon by:
 
-Built at the CMKL Hackathon.
-<!-- TODO: list team members and describe your individual contribution -->
+- **Hsu Myat Noe** · [GitHub](https://github.com/NoeNoe25) · [LinkedIn](https://www.linkedin.com/in/hsu-myat-noe569aa729a/)
+- **Moe Chan Myae Maung** · [GitHub](https://github.com/MoeChanMyaeMaung)
+- **Su Sandi Linn** · [GitHub](https://github.com/SuSandiLinn13)
